@@ -45,7 +45,7 @@ export const AppProvider = ({ children }) => {
   // Load from localStorage on mount
   useEffect(() => {
     try {
-      const saved = localStorage.getItem('nestmate_state')
+      const saved = localStorage.getItem('cohab_state')
       if (saved) {
         const state = JSON.parse(saved)
         if (state.isLoggedIn) {
@@ -69,7 +69,7 @@ export const AppProvider = ({ children }) => {
   useEffect(() => {
     if (isLoggedIn) {
       try {
-        localStorage.setItem('nestmate_state', JSON.stringify({
+        localStorage.setItem('cohab_state', JSON.stringify({
           isLoggedIn, userRole, user, onboardingComplete,
           swipeHistory, matches, messages, savedProperties, heldRooms
         }))
@@ -121,7 +121,7 @@ export const AppProvider = ({ children }) => {
     setMessages({})
     setSavedProperties([])
     setHeldRooms({})
-    localStorage.removeItem('nestmate_state')
+    localStorage.removeItem('cohab_state')
   }
 
   const completeOnboarding = (profileData) => {

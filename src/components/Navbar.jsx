@@ -44,7 +44,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link to="/dashboard" className="flex items-center gap-2 font-bold text-xl text-navy">
             <span className="text-2xl">🏠</span>
-            <span>NestMate</span>
+            <span>CoHab</span>
           </Link>
 
           {/* Desktop nav */}

@@ -65,7 +65,7 @@ export default function Auth() {
         <div className="absolute bottom-20 left-10 w-64 h-64 bg-coral/20 rounded-full blur-3xl" />
         <div className="relative z-10 text-center">
           <div className="text-6xl mb-6">🏠</div>
-          <h1 className="text-4xl font-black text-white mb-4">NestMate</h1>
+          <h1 className="text-4xl font-black text-white mb-4">CoHab</h1>
           <p className="text-xl text-white/80 mb-8">Find Your People.<br />Find Your Place.</p>
           <div className="space-y-3 text-left max-w-xs">
             {[
@@ -95,7 +95,7 @@ export default function Auth() {
           {/* Mobile logo */}
           <div className="lg:hidden flex items-center gap-2 mb-8 font-bold text-xl text-navy">
             <span className="text-2xl">🏠</span>
-            NestMate
+            CoHab
           </div>
 
           {/* Tab toggle */}

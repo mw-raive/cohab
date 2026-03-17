@@ -116,7 +116,7 @@ export default function Onboarding() {
         <div className="max-w-lg mx-auto">
           <div className="flex items-center gap-3 mb-3">
             <span className="text-xl">🏠</span>
-            <span className="font-bold text-navy">NestMate</span>
+            <span className="font-bold text-navy">CoHab</span>
             <span className="ml-auto text-sm text-gray-400">Step {step + 1} of {steps.length}</span>
           </div>
           {/* Progress */}

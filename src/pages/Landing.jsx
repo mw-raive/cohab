@@ -17,7 +17,7 @@ export default function Landing() {
       <nav className="absolute top-0 left-0 right-0 z-20 px-6 py-5 flex items-center justify-between">
         <div className="flex items-center gap-2 text-white font-bold text-xl">
           <span className="text-2xl">🏠</span>
-          <span>NestMate</span>
+          <span>CoHab</span>
         </div>
         <div className="flex items-center gap-3">
           <Link to="/auth" className="text-white/80 hover:text-white text-sm font-medium transition-colors">Sign in</Link>
@@ -174,7 +174,7 @@ export default function Landing() {
             viewport={{ once: true }}
             className="text-center mb-14"
           >
-            <h2 className="text-4xl font-black text-navy mb-4">How NestMate Works</h2>
+            <h2 className="text-4xl font-black text-navy mb-4">How CoHab Works</h2>
             <p className="text-gray-500 text-lg">From profile to lease in 3 simple steps</p>
           </motion.div>
 
@@ -329,7 +329,7 @@ export default function Landing() {
             viewport={{ once: true }}
             className="text-center mb-14"
           >
-            <h2 className="text-4xl font-black text-navy mb-4">Students Love NestMate</h2>
+            <h2 className="text-4xl font-black text-navy mb-4">Students Love CoHab</h2>
             <div className="flex items-center justify-center gap-1 mb-2">
               {[1,2,3,4,5].map(s => <Star key={s} size={20} className="fill-amber-400 text-amber-400" />)}
             </div>
@@ -359,7 +359,7 @@ export default function Landing() {
                 program: "MBA, Harvard Business",
                 avatar: "Ananya",
                 color: "d1f4cc",
-                text: "As an international student, I was terrified of the housing process. NestMate made it so easy — I matched with great people and found a verified place before I even landed.",
+                text: "As an international student, I was terrified of the housing process. CoHab made it so easy — I matched with great people and found a verified place before I even landed.",
                 score: 88
               }
             ].map((t, i) => (
@@ -407,7 +407,7 @@ export default function Landing() {
               <span className="badge bg-coral text-white mb-4">For Property Owners</span>
               <h2 className="text-4xl font-black text-white mb-6">Fill Rooms Faster.</h2>
               <p className="text-white/70 text-lg mb-8 leading-relaxed">
-                Stop dealing with unqualified leads. NestMate connects you directly with verified
+                Stop dealing with unqualified leads. CoHab connects you directly with verified
                 grad students who are pre-matched with compatible roommates and ready to sign.
               </p>
               <div className="space-y-3 mb-8">
@@ -490,7 +490,7 @@ export default function Landing() {
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-2 text-white font-bold text-lg">
             <span className="text-2xl">🏠</span>
-            NestMate
+            CoHab
           </div>
           <div className="flex gap-6 text-white/50 text-sm">
             <a href="#" className="hover:text-white/80 transition-colors">About</a>
@@ -498,7 +498,7 @@ export default function Landing() {
             <a href="#" className="hover:text-white/80 transition-colors">Terms</a>
             <a href="#" className="hover:text-white/80 transition-colors">Contact</a>
           </div>
-          <p className="text-white/30 text-sm">© 2024 NestMate. All rights reserved.</p>
+          <p className="text-white/30 text-sm">© 2024 CoHab. All rights reserved.</p>
         </div>
       </footer>
     </div>
