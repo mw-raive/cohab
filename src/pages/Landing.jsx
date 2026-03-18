@@ -110,7 +110,7 @@ export default function Landing() {
             initial="hidden"
             animate="visible"
             custom={4}
-            className="mt-16 flex justify-center gap-4 overflow-hidden"
+            className="mt-12 flex justify-center gap-3 overflow-hidden px-4"
           >
             {[
               { name: "Sarah Chen", score: 94, school: "HMS", color: "b6e3f4", seed: "Sarah" },
@@ -122,17 +122,17 @@ export default function Landing() {
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.8 + i * 0.15 }}
-                className={`glass rounded-2xl p-4 w-36 text-center ${i === 1 ? '-mt-6 z-10' : ''}`}
+                className={`glass rounded-2xl p-3 w-28 sm:w-36 text-center shrink-0 ${i === 1 ? '-mt-6 z-10' : ''} ${i === 2 ? 'hidden xs:block' : ''}`}
               >
                 <img
                   src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${card.seed}&backgroundColor=${card.color}`}
-                  className="w-14 h-14 rounded-full mx-auto mb-2 bg-white"
+                  className="w-12 h-12 sm:w-14 sm:h-14 rounded-full mx-auto mb-2 bg-white"
                   alt={card.name}
                 />
-                <p className="text-white text-xs font-bold">{card.name}</p>
+                <p className="text-white text-xs font-bold truncate">{card.name}</p>
                 <p className="text-white/60 text-xs">{card.school}</p>
                 <div className="mt-2 bg-white/20 rounded-full px-2 py-1">
-                  <span className="text-coral font-bold text-xs">{card.score}% match</span>
+                  <span className="text-coral font-bold text-xs">{card.score}%</span>
                 </div>
               </motion.div>
             ))}

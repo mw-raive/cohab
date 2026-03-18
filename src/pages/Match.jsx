@@ -117,7 +117,7 @@ function FilterDrawer({ onClose }) {
       animate={{ x: 0 }}
       exit={{ x: '100%' }}
       transition={{ type: 'tween', duration: 0.25 }}
-      className="fixed right-0 top-0 bottom-0 w-80 bg-white shadow-2xl z-40 flex flex-col"
+      className="fixed right-0 top-0 bottom-0 w-full max-w-xs sm:w-80 bg-white shadow-2xl z-40 flex flex-col"
     >
       <div className="flex items-center justify-between p-5 border-b">
         <h3 className="font-bold text-navy text-lg">Filters</h3>

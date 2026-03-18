@@ -92,12 +92,12 @@ export default function PropertyDetail() {
 
         {/* Thumbnail strip */}
         {property.photos.length > 1 && (
-          <div className="flex gap-2 mt-2">
+          <div className="flex gap-2 mt-2 overflow-x-auto pb-1">
             {property.photos.map((photo, i) => (
               <button
                 key={i}
                 onClick={() => setPhotoIndex(i)}
-                className={`w-20 h-14 rounded-lg overflow-hidden border-2 transition-all ${
+                className={`w-16 h-12 sm:w-20 sm:h-14 rounded-lg overflow-hidden border-2 transition-all shrink-0 ${
                   i === photoIndex ? 'border-coral' : 'border-transparent opacity-60 hover:opacity-100'
                 }`}
               >

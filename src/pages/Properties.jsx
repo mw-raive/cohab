@@ -60,31 +60,31 @@ export default function Properties() {
       </motion.div>
 
       {/* Search */}
-      <div className="flex gap-3 mb-5">
-        <div className="relative flex-1">
+      <div className="flex gap-2 mb-5">
+        <div className="relative flex-1 min-w-0">
           <Search size={18} className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" />
           <input
             type="text"
             value={search}
             onChange={e => setSearch(e.target.value)}
-            placeholder="Search by neighborhood, school, or title..."
+            placeholder="Search neighborhood, school..."
             className="input-field pl-11"
           />
         </div>
         <button
           onClick={() => setSearch('Harvard')}
-          className="flex items-center gap-2 px-4 py-3 border-2 border-gray-200 rounded-xl text-sm text-gray-600 hover:border-navy transition-all whitespace-nowrap font-medium"
+          className="flex items-center gap-2 px-3 py-3 border-2 border-gray-200 rounded-xl text-sm text-gray-600 hover:border-navy transition-all shrink-0 font-medium"
         >
-          <MapPin size={16} /> Near my school
+          <MapPin size={16} /><span className="hidden sm:inline">Near my school</span>
         </button>
         <button
           onClick={() => setShowFilters(!showFilters)}
-          className={`flex items-center gap-2 px-4 py-3 border-2 rounded-xl text-sm font-medium transition-all ${
+          className={`flex items-center gap-2 px-3 py-3 border-2 rounded-xl text-sm font-medium transition-all shrink-0 ${
             showFilters ? 'border-coral bg-red-50 text-coral' : 'border-gray-200 text-gray-600 hover:border-navy'
           }`}
         >
           <SlidersHorizontal size={16} />
-          {showFilters ? 'Hide' : 'Filters'}
+          <span className="hidden sm:inline">{showFilters ? 'Hide' : 'Filters'}</span>
         </button>
       </div>
 
@@ -133,8 +133,8 @@ export default function Properties() {
       )}
 
       {/* Sort & View toggle */}
-      <div className="flex items-center justify-between mb-5">
-        <div className="flex items-center gap-2 overflow-x-auto">
+      <div className="flex items-center justify-between mb-5 gap-3">
+        <div className="flex items-center gap-2 overflow-x-auto pb-1 flex-1 min-w-0">
           {[
             { val: 'match', label: 'Best Match' },
             { val: 'price_asc', label: 'Price ↑' },
@@ -183,11 +183,10 @@ export default function Properties() {
           ))}
         </div>
       ) : (
-        <div className="flex gap-5">
+        <div className="flex flex-col md:flex-row gap-5">
           {/* Mock map */}
-          <div className="flex-1 bg-gray-100 rounded-2xl relative overflow-hidden" style={{ minHeight: 500 }}>
+          <div className="flex-1 bg-gray-100 rounded-2xl relative overflow-hidden" style={{ minHeight: 320 }}>
             <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-green-50">
-              {/* Street lines */}
               <svg className="absolute inset-0 w-full h-full opacity-30" viewBox="0 0 600 500">
                 <line x1="0" y1="150" x2="600" y2="150" stroke="#999" strokeWidth="2"/>
                 <line x1="0" y1="300" x2="600" y2="300" stroke="#999" strokeWidth="2"/>
@@ -196,7 +195,6 @@ export default function Properties() {
                 <line x1="300" y1="0" x2="300" y2="500" stroke="#999" strokeWidth="2"/>
                 <line x1="450" y1="0" x2="450" y2="500" stroke="#999" strokeWidth="2"/>
               </svg>
-              {/* School markers */}
               {[
                 { x: '35%', y: '35%', label: 'HMS' },
                 { x: '65%', y: '25%', label: 'MIT' },
@@ -206,7 +204,6 @@ export default function Properties() {
                   <div className="bg-navy text-white text-xs rounded-full px-2 py-1 font-bold">{m.label}</div>
                 </div>
               ))}
-              {/* Property pins */}
               {filtered.map((p, i) => {
                 const positions = [
                   { x: '32%', y: '45%' }, { x: '60%', y: '35%' }, { x: '40%', y: '30%' },
@@ -231,11 +228,11 @@ export default function Properties() {
           </div>
 
           {/* Property list */}
-          <div className="w-80 space-y-3 overflow-y-auto" style={{ maxHeight: 500 }}>
+          <div className="w-full md:w-80 space-y-3 overflow-y-auto" style={{ maxHeight: 500 }}>
             {filtered.map(p => (
               <div key={p.id} className="bg-white rounded-xl p-4 card-shadow">
                 <div className="flex gap-3">
-                  <img src={p.photos[0] || ''} className="w-20 h-16 rounded-lg object-cover bg-gray-100" alt="" />
+                  <img src={p.photos[0] || ''} className="w-20 h-16 rounded-lg object-cover bg-gray-100 shrink-0" alt="" />
                   <div className="flex-1 min-w-0">
                     <p className="font-semibold text-navy text-sm line-clamp-1">{p.title}</p>
                     <p className="text-xs text-gray-500">{p.distanceToSchool} mi · {p.nearestSchool.split(' ')[0]}</p>
