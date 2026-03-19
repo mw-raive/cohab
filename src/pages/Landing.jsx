@@ -466,7 +466,7 @@ export default function Landing() {
           viewport={{ once: true }}
           className="max-w-2xl mx-auto"
         >
-          <h2 className="text-4xl font-black text-navy mb-4">Ready to find your nest?</h2>
+          <h2 className="text-4xl font-black text-navy mb-4">Ready to find your place?</h2>
           <p className="text-gray-500 text-lg mb-8">Join 2,400+ grad students who found their perfect roommate match.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
