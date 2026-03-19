@@ -110,7 +110,7 @@ export default function Landing() {
             initial="hidden"
             animate="visible"
             custom={4}
-            className="mt-12 flex justify-center gap-3 overflow-hidden px-4"
+            className="mt-12 flex justify-center gap-3 px-4"
           >
             {[
               { name: "Sarah Chen", score: 94, school: "HMS", color: "b6e3f4", seed: "Sarah" },
@@ -122,7 +122,7 @@ export default function Landing() {
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.8 + i * 0.15 }}
-                className={`glass rounded-2xl p-3 w-28 sm:w-36 text-center shrink-0 ${i === 1 ? '-mt-6 z-10' : ''} ${i === 2 ? 'hidden xs:block' : ''}`}
+                className={`glass rounded-2xl p-3 w-28 sm:w-36 text-center shrink-0 ${i === 2 ? 'hidden sm:block' : ''}`}
               >
                 <img
                   src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${card.seed}&backgroundColor=${card.color}`}
