@@ -93,7 +93,7 @@ export const AppProvider = ({ children }) => {
       name: "Alex Landlord",
       email: "landlord@example.com",
       role: "landlord",
-      photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Landlord&backgroundColor=b6e3f4",
+      photo: "https://api.dicebear.com/9.x/personas/svg?seed=Landlord&backgroundColor=b6e3f4",
       company: "Boston Properties LLC",
       tier: "premium"
     })

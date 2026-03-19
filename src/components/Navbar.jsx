@@ -87,7 +87,7 @@ export default function Navbar() {
                 className="flex items-center gap-2 p-1.5 rounded-lg hover:bg-gray-50 transition-all"
               >
                 <img
-                  src={user?.photo || "https://api.dicebear.com/7.x/avataaars/svg?seed=default"}
+                  src={user?.photo || "https://api.dicebear.com/9.x/personas/svg?seed=default"}
                   alt={user?.name}
                   className="w-8 h-8 rounded-full bg-gray-100"
                 />

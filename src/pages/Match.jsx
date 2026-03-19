@@ -46,7 +46,7 @@ function MatchOverlay({ match, onDismiss, onMessage }) {
           <div className="flex items-center justify-center gap-4 mb-6">
             <div className="text-center">
               <img
-                src={`https://api.dicebear.com/7.x/avataaars/svg?seed=Jordan&backgroundColor=ffd5dc`}
+                src={`https://api.dicebear.com/9.x/personas/svg?seed=Jordan&backgroundColor=ffd5dc`}
                 className="w-20 h-20 rounded-full border-4 border-white mx-auto"
                 alt="You"
               />

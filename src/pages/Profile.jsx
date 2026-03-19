@@ -52,7 +52,7 @@ export default function Profile() {
             <div className="flex items-end justify-between -mt-12 mb-4">
               <div className="relative">
                 <img
-                  src={user?.photo || `https://api.dicebear.com/7.x/avataaars/svg?seed=Jordan&backgroundColor=ffd5dc`}
+                  src={user?.photo || `https://api.dicebear.com/9.x/personas/svg?seed=Jordan&backgroundColor=ffd5dc`}
                   className="w-24 h-24 rounded-2xl border-4 border-white bg-gray-100 shadow-lg"
                   alt={user?.name}
                 />

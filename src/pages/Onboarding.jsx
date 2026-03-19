@@ -434,7 +434,7 @@ export default function Onboarding() {
                     <div className="bg-gradient-to-br from-navy to-coral p-6 text-white">
                       <div className="flex items-center gap-4">
                         <img
-                          src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${profile.name || 'user'}&backgroundColor=ffd5dc`}
+                          src={`https://api.dicebear.com/9.x/personas/svg?seed=${profile.name || 'user'}&backgroundColor=ffd5dc`}
                           className="w-16 h-16 rounded-full bg-white/20"
                           alt={profile.name}
                         />

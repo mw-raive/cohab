@@ -47,7 +47,7 @@ export default function Auth() {
         name: form.name || 'Jordan Taylor',
         email: form.email,
         role,
-        photo: `https://api.dicebear.com/7.x/avataaars/svg?seed=${form.name || 'Jordan'}&backgroundColor=ffd5dc`,
+        photo: `https://api.dicebear.com/9.x/personas/svg?seed=${form.name || 'Jordan'}&backgroundColor=ffd5dc`,
         university: role === 'student' ? 'Harvard Medical School' : null,
         company: role === 'landlord' ? 'My Properties LLC' : null,
       })

@@ -149,7 +149,7 @@ export default function StudentDashboard() {
             <h2 className="font-bold text-navy text-lg mb-4">Your Profile</h2>
             <div className="flex items-center gap-4">
               <img
-                src={user?.photo || `https://api.dicebear.com/7.x/avataaars/svg?seed=Jordan&backgroundColor=ffd5dc`}
+                src={user?.photo || `https://api.dicebear.com/9.x/personas/svg?seed=Jordan&backgroundColor=ffd5dc`}
                 className="w-16 h-16 rounded-full bg-gray-100"
                 alt={user?.name}
               />

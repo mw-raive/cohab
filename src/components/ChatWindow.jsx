@@ -33,7 +33,7 @@ export default function ChatWindow({ threadId, contact }) {
       {/* Header */}
       <div className="flex items-center gap-3 px-5 py-4 border-b border-gray-100 bg-white">
         <img
-          src={contact?.photo || "https://api.dicebear.com/7.x/avataaars/svg?seed=default"}
+          src={contact?.photo || "https://api.dicebear.com/9.x/personas/svg?seed=default"}
           alt={contact?.name}
           className="w-10 h-10 rounded-full bg-gray-100"
         />

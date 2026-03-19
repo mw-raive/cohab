@@ -125,7 +125,7 @@ export default function Landing() {
                 className={`glass rounded-2xl p-3 w-28 sm:w-36 text-center shrink-0 ${i === 2 ? 'hidden sm:block' : ''}`}
               >
                 <img
-                  src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${card.seed}&backgroundColor=${card.color}`}
+                  src={`https://api.dicebear.com/9.x/personas/svg?seed=${card.seed}&backgroundColor=${card.color}`}
                   className="w-12 h-12 sm:w-14 sm:h-14 rounded-full mx-auto mb-2 bg-white"
                   alt={card.name}
                 />
@@ -378,7 +378,7 @@ export default function Landing() {
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-3">
                     <img
-                      src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${t.avatar}&backgroundColor=${t.color}`}
+                      src={`https://api.dicebear.com/9.x/personas/svg?seed=${t.avatar}&backgroundColor=${t.color}`}
                       className="w-10 h-10 rounded-full bg-gray-100"
                       alt={t.name}
                     />
